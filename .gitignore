@@ -1,0 +1,6 @@
+# User-managed media assets (kept local)
+assets/*.jpg
+assets/*.jpeg
+assets/*.png
+assets/*.webp
+assets/*.avif

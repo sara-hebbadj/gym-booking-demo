@@ -1,69 +1,54 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Profile</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletica | Profile</title>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/power-grotesk">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="sidebar">
+    <div class="logo">ATHLETICA</div>
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="membership.html">Membership</a>
+    <a class="active" href="profile.html">Profile</a>
+    <a href="trainers.html">Trainers</a>
+  </div>
 
-<div class="sidebar">
+  <main class="main">
+    <section class="hero reveal">
+      <h1>Your Athlete Profile</h1>
+      <p>Track upcoming bookings, training consistency, and total classes completed.</p>
+    </section>
 
-<div class="logo">ATHLETICA</div>
+    <section class="profile-section card reveal">
+      <h3>Membership</h3>
+      <p>Plan: Elite Annual</p>
+      <p>Renewal: December 20, 2026</p>
+      <div class="metric"><span>Classes Completed</span><strong>214</strong></div>
+    </section>
 
-<a href="index.html">Home</a>
-<a href="classes.html">Classes</a>
-<a href="membership.html">Membership</a>
-<a href="profile.html">Profile</a>
-<a href="trainers.html">Trainers</a>
+    <section class="profile-section reveal">
+      <h2>Upcoming Classes</h2>
+      <div class="class-list">
+        <div class="class-item">CrossFit Engine Room — Tuesday 18:30</div>
+        <div class="class-item">Pilates Precision — Wednesday 10:00</div>
+        <div class="class-item">Stretch & Recover — Saturday 11:30</div>
+      </div>
+    </section>
 
-</div>
-
-<div class="main">
-
-<h1>Your Profile</h1>
-
-<div class="profile-section card">
-
-<h3>Membership</h3>
-<p>Plan: Premium</p>
-<p>Expires: December 20, 2026</p>
-
-</div>
-
-<div class="profile-section">
-
-<h3>Upcoming Classes</h3>
-
-<div class="class-list">
-
-<div class="class-item">HIIT Training – Tomorrow 12:00</div>
-<div class="class-item">Yoga Flow – Friday 10:00</div>
-
-</div>
-
-</div>
-
-<div class="profile-section">
-
-<h3>Past Classes</h3>
-
-<div class="class-list">
-
-<div class="class-item">Spin Class – Last Week</div>
-<div class="class-item">Pilates – 2 Weeks Ago</div>
-
-</div>
-
-</div>
-
-</div>
-
+    <section class="profile-section reveal">
+      <h2>Recent Sessions</h2>
+      <div class="class-list">
+        <div class="class-item">Strength Lab Advanced — Last Friday</div>
+        <div class="class-item">Power Yoga Flow — Last Thursday</div>
+        <div class="class-item">Sprint & Sled — Last Monday</div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
