@@ -2,7 +2,8 @@
 <html>
 
 <head>
-<title>Gym Dashboard</title>
+
+<title>Gym Booking Platform</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,13 +15,13 @@
 
 <div class="sidebar">
 
-<h2>ATHLETICA</h2>
+<div class="logo">ATHLETICA</div>
 
-<a href="index.html">Dashboard</a>
+<a href="index.html">Home</a>
 <a href="classes.html">Classes</a>
-<a href="trainers.html">Trainers</a>
 <a href="membership.html">Membership</a>
 <a href="profile.html">Profile</a>
+<a href="trainers.html">Trainers</a>
 
 </div>
 
@@ -28,15 +29,44 @@
 
 <h1>Welcome Back</h1>
 
+<div class="grid">
+
 <div class="card">
 <h3>Upcoming Class</h3>
-<p>HIIT Training with Alex – 12:00 PM</p>
-<button>View Class</button>
+<p>HIIT Training – Tomorrow 12:00</p>
+<button onclick="location.href='classes.html'">View Classes</button>
 </div>
 
 <div class="card">
-<h3>Membership Status</h3>
-<p>Premium Member</p>
+<h3>Membership</h3>
+<p>Premium Plan</p>
+<button onclick="location.href='membership.html'">Upgrade</button>
+</div>
+
+</div>
+
+<h1 style="margin-top:40px">Popular Classes</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>HIIT Training</h3>
+<p>High intensity workout</p>
+<button onclick="location.href='classes.html'">Book</button>
+</div>
+
+<div class="card">
+<h3>Yoga Flow</h3>
+<p>Flexibility and balance</p>
+<button onclick="location.href='classes.html'">Book</button>
+</div>
+
+<div class="card">
+<h3>Pilates</h3>
+<p>Core strengthening</p>
+<button onclick="location.href='classes.html'">Book</button>
+</div>
+
 </div>
 
 </div>
