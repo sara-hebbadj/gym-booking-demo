@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<title>Gym Booking Platform</title>
+<title>Gym Dashboard</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
-<h1>Gym Booking Dashboard</h1>
-</header>
+<div class="sidebar">
 
-<section class="dashboard">
+<h2>ATHLETICA</h2>
+
+<a href="index.html">Dashboard</a>
+<a href="classes.html">Classes</a>
+<a href="trainers.html">Trainers</a>
+<a href="membership.html">Membership</a>
+<a href="profile.html">Profile</a>
+
+</div>
+
+<div class="main">
+
+<h1>Welcome Back</h1>
 
 <div class="card">
-<h2>Yoga Class</h2>
-<p>Trainer: Sarah</p>
-<p>Time: 10:00 AM</p>
-<button onclick="bookClass('Yoga Class')">Book</button>
+<h3>Upcoming Class</h3>
+<p>HIIT Training with Alex – 12:00 PM</p>
+<button>View Class</button>
 </div>
 
 <div class="card">
-<h2>HIIT Training</h2>
-<p>Trainer: Alex</p>
-<p>Time: 12:00 PM</p>
-<button onclick="bookClass('HIIT Training')">Book</button>
+<h3>Membership Status</h3>
+<p>Premium Member</p>
 </div>
 
-<div class="card">
-<h2>Pilates</h2>
-<p>Trainer: Emma</p>
-<p>Time: 3:00 PM</p>
-<button onclick="bookClass('Pilates')">Book</button>
 </div>
-
-</section>
-
-<div id="popup" class="popup">
-<p id="popup-text"></p>
-<button onclick="closePopup()">Close</button>
-</div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
