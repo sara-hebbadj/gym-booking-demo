@@ -1,76 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Classes</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletica | Class Schedule</title>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/power-grotesk">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="sidebar">
+    <div class="logo">ATHLETICA</div>
+    <a href="index.html">Home</a>
+    <a class="active" href="classes.html">Classes</a>
+    <a href="membership.html">Membership</a>
+    <a href="profile.html">Profile</a>
+    <a href="trainers.html">Trainers</a>
+  </div>
 
-<div class="sidebar">
+  <main class="main">
+    <section class="hero reveal">
+      <h1>Class Booking Arena</h1>
+      <p>Choose from premium performance sessions throughout the week. Every class is capped for quality coaching, immersive lighting, and serious athletic results.</p>
+    </section>
 
-<div class="logo">ATHLETICA</div>
+    <h2 class="section-title reveal">Weekly Schedule</h2>
+    <div class="calendar">
+      <div class="day reveal"><strong>Mon</strong><div class="class">6:00 - Strength Foundations</div><div class="class">10:00 - Pilates Precision</div><div class="class">18:30 - CrossFit Forge</div></div>
+      <div class="day reveal"><strong>Tue</strong><div class="class">7:00 - Mobility & Stretching</div><div class="class">12:00 - Power Yoga Flow</div><div class="class">19:00 - Zumba Ignite</div></div>
+      <div class="day reveal"><strong>Wed</strong><div class="class">6:30 - HIIT Burner</div><div class="class">11:30 - Barre Sculpt</div><div class="class">18:00 - Boxing Conditioning</div></div>
+      <div class="day reveal"><strong>Thu</strong><div class="class">7:00 - Athletic Core Lab</div><div class="class">13:00 - Yoga Recovery</div><div class="class">19:15 - Strength Lab Advanced</div></div>
+      <div class="day reveal"><strong>Fri</strong><div class="class">6:00 - Sprint & Sled</div><div class="class">12:30 - Pilates Burn</div><div class="class">18:00 - CrossFit Engine Room</div></div>
+      <div class="day reveal"><strong>Sat</strong><div class="class">8:00 - Endurance Ride (Spin)</div><div class="class">10:00 - Functional Strength</div><div class="class">11:30 - Stretch & Recover</div></div>
+      <div class="day reveal"><strong>Sun</strong><div class="class">9:00 - Breathwork Yoga</div><div class="class">10:30 - Full Body Circuit</div><div class="class">12:00 - Deep Mobility Reset</div></div>
+    </div>
 
-<a href="index.html">Home</a>
-<a href="classes.html">Classes</a>
-<a href="membership.html">Membership</a>
-<a href="profile.html">Profile</a>
-<a href="trainers.html">Trainers</a>
-
-</div>
-
-<div class="main">
-
-<h1>Class Schedule</h1>
-
-<div class="calendar">
-
-<div class="day">
-Mon
-<div class="class">Yoga 10:00</div>
-<div class="class">HIIT 12:00</div>
-</div>
-
-<div class="day">
-Tue
-<div class="class">Pilates 11:00</div>
-<div class="class">Spin 18:00</div>
-</div>
-
-<div class="day">
-Wed
-<div class="class">Crossfit 10:00</div>
-</div>
-
-<div class="day">
-Thu
-<div class="class">Yoga 10:00</div>
-</div>
-
-<div class="day">
-Fri
-<div class="class">HIIT 12:00</div>
-</div>
-
-<div class="day">
-Sat
-<div class="class">Pilates 11:00</div>
-</div>
-
-<div class="day">
-Sun
-<div class="class">Recovery Yoga</div>
-</div>
-
-</div>
-
-</div>
-
+    <h2 class="section-title reveal">Explore More Class Options</h2>
+    <section class="grid">
+      <article class="card reveal"><h3>Olympic Lifting</h3><p>Technique-intensive snatch and clean & jerk training.</p><button>Book</button></article>
+      <article class="card reveal"><h3>Glute & Legs Builder</h3><p>Lower body hypertrophy focused programming.</p><button>Book</button></article>
+      <article class="card reveal"><h3>Core + Stability</h3><p>Build anti-rotation and deep core control.</p><button>Book</button></article>
+      <article class="card reveal"><h3>TRX Suspension</h3><p>Joint-friendly bodyweight resistance class.</p><button>Book</button></article>
+      <article class="card reveal"><h3>Athletic Conditioning</h3><p>Agility ladders, med-ball power, and endurance sets.</p><button>Book</button></article>
+      <article class="card reveal"><h3>Bootcamp Outdoor</h3><p>High-energy team training in fresh air.</p><button>Book</button></article>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

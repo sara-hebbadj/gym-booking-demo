@@ -1,75 +1,61 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Gym Booking Platform</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletica | Premium Gym Booking Platform</title>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/power-grotesk">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="sidebar">
+    <div class="logo">ATHLETICA</div>
+    <a class="active" href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="membership.html">Membership</a>
+    <a href="profile.html">Profile</a>
+    <a href="trainers.html">Trainers</a>
+  </div>
 
-<div class="sidebar">
+  <main class="main">
+    <section class="hero reveal">
+      <h1>Train Like an Athlete. Book Like a Pro.</h1>
+      <p>A premium gym booking experience with high-performance classes, elite trainers, and a modern flow built to keep you moving. Discover studio sessions, strength labs, cardio zones, and recovery rituals in one polished dashboard.</p>
+      <button onclick="location.href='classes.html'">Book Your Next Class</button>
+      <div class="chip-row">
+        <div class="chip">Pilates</div><div class="chip">Yoga</div><div class="chip">CrossFit</div><div class="chip">Strength</div><div class="chip">Zumba</div><div class="chip">Stretching</div><div class="chip">Boxing</div><div class="chip">Spin</div><div class="chip">Mobility</div><div class="chip">Barre</div>
+      </div>
+    </section>
 
-<div class="logo">ATHLETICA</div>
+    <section class="grid section-title">
+      <article class="card reveal">
+        <h3>Today’s Performance Goal</h3>
+        <p>Complete 2 classes and hit your weekly fitness streak.</p>
+        <div class="metric"><span>Current Streak</span><strong>12 Days</strong></div>
+      </article>
+      <article class="card reveal">
+        <h3>Upcoming Class</h3>
+        <p>CrossFit Engine Room - Tomorrow at 18:30</p>
+        <button onclick="location.href='classes.html'">Manage Bookings</button>
+      </article>
+      <article class="card reveal">
+        <h3>Membership Status</h3>
+        <p>Elite Annual with priority class slots and lounge access.</p>
+        <button onclick="location.href='membership.html'">View Benefits</button>
+      </article>
+    </section>
 
-<a href="index.html">Home</a>
-<a href="classes.html">Classes</a>
-<a href="membership.html">Membership</a>
-<a href="profile.html">Profile</a>
-<a href="trainers.html">Trainers</a>
-
-</div>
-
-<div class="main">
-
-<h1>Welcome Back</h1>
-
-<div class="grid">
-
-<div class="card">
-<h3>Upcoming Class</h3>
-<p>HIIT Training – Tomorrow 12:00</p>
-<button onclick="location.href='classes.html'">View Classes</button>
-</div>
-
-<div class="card">
-<h3>Membership</h3>
-<p>Premium Plan</p>
-<button onclick="location.href='membership.html'">Upgrade</button>
-</div>
-
-</div>
-
-<h1 style="margin-top:40px">Popular Classes</h1>
-
-<div class="grid">
-
-<div class="card">
-<h3>HIIT Training</h3>
-<p>High intensity workout</p>
-<button onclick="location.href='classes.html'">Book</button>
-</div>
-
-<div class="card">
-<h3>Yoga Flow</h3>
-<p>Flexibility and balance</p>
-<button onclick="location.href='classes.html'">Book</button>
-</div>
-
-<div class="card">
-<h3>Pilates</h3>
-<p>Core strengthening</p>
-<button onclick="location.href='classes.html'">Book</button>
-</div>
-
-</div>
-
-</div>
-
+    <h2 class="section-title reveal">Popular Sessions This Week</h2>
+    <section class="grid">
+      <article class="card reveal"><h3>Pilates Precision</h3><p>Core control and posture in a boutique reformer studio.</p></article>
+      <article class="card reveal"><h3>Power Yoga Flow</h3><p>Strength + flexibility with controlled breath work.</p></article>
+      <article class="card reveal"><h3>CrossFit Forge</h3><p>Explosive circuits, Olympic lifts, and endurance blocks.</p></article>
+      <article class="card reveal"><h3>Strength Lab</h3><p>Progressive overload sessions for lean muscle growth.</p></article>
+      <article class="card reveal"><h3>Zumba Ignite</h3><p>High-energy dance cardio with full-body toning.</p></article>
+      <article class="card reveal"><h3>Stretch & Recover</h3><p>Mobility-focused cool-down for sustainable performance.</p></article>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
