@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gym Booking Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Gym Booking Dashboard</h1>
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+<h2>Yoga Class</h2>
+<p>Trainer: Sarah</p>
+<p>Time: 10:00 AM</p>
+<button onclick="bookClass('Yoga Class')">Book</button>
+</div>
+
+<div class="card">
+<h2>HIIT Training</h2>
+<p>Trainer: Alex</p>
+<p>Time: 12:00 PM</p>
+<button onclick="bookClass('HIIT Training')">Book</button>
+</div>
+
+<div class="card">
+<h2>Pilates</h2>
+<p>Trainer: Emma</p>
+<p>Time: 3:00 PM</p>
+<button onclick="bookClass('Pilates')">Book</button>
+</div>
+
+</section>
+
+<div id="popup" class="popup">
+<p id="popup-text"></p>
+<button onclick="closePopup()">Close</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
