@@ -25,27 +25,40 @@
       <p>Choose from premium performance sessions throughout the week. Every class is capped for quality coaching, immersive lighting, and serious athletic results.</p>
     </section>
 
+    <section class="booking-panel reveal" aria-live="polite">
+      <div>
+        <p class="booking-label">Bookings Confirmed</p>
+        <h2><span id="booking-count">0</span> active reservations</h2>
+        <p class="booking-sub">Reserve your classes in one tap. Your next sessions are saved for this browser.</p>
+      </div>
+      <div id="booking-list" class="booking-list"></div>
+    </section>
+
     <h2 class="section-title reveal">Weekly Schedule</h2>
     <div class="calendar">
-      <div class="day reveal"><strong>Mon</strong><div class="class">6:00 - Strength Foundations</div><div class="class">10:00 - Pilates Precision</div><div class="class">18:30 - CrossFit Forge</div></div>
-      <div class="day reveal"><strong>Tue</strong><div class="class">7:00 - Mobility & Stretching</div><div class="class">12:00 - Power Yoga Flow</div><div class="class">19:00 - Zumba Ignite</div></div>
-      <div class="day reveal"><strong>Wed</strong><div class="class">6:30 - HIIT Burner</div><div class="class">11:30 - Barre Sculpt</div><div class="class">18:00 - Boxing Conditioning</div></div>
-      <div class="day reveal"><strong>Thu</strong><div class="class">7:00 - Athletic Core Lab</div><div class="class">13:00 - Yoga Recovery</div><div class="class">19:15 - Strength Lab Advanced</div></div>
-      <div class="day reveal"><strong>Fri</strong><div class="class">6:00 - Sprint & Sled</div><div class="class">12:30 - Pilates Burn</div><div class="class">18:00 - CrossFit Engine Room</div></div>
-      <div class="day reveal"><strong>Sat</strong><div class="class">8:00 - Endurance Ride (Spin)</div><div class="class">10:00 - Functional Strength</div><div class="class">11:30 - Stretch & Recover</div></div>
-      <div class="day reveal"><strong>Sun</strong><div class="class">9:00 - Breathwork Yoga</div><div class="class">10:30 - Full Body Circuit</div><div class="class">12:00 - Deep Mobility Reset</div></div>
+      <div class="day reveal"><strong>Mon</strong><button class="class" data-book-time="Mon 6:00" data-book-class="Strength Foundations">6:00 - Strength Foundations</button><button class="class" data-book-time="Mon 10:00" data-book-class="Pilates Precision">10:00 - Pilates Precision</button><button class="class" data-book-time="Mon 18:30" data-book-class="CrossFit Forge">18:30 - CrossFit Forge</button></div>
+      <div class="day reveal"><strong>Tue</strong><button class="class" data-book-time="Tue 7:00" data-book-class="Mobility & Stretching">7:00 - Mobility & Stretching</button><button class="class" data-book-time="Tue 12:00" data-book-class="Power Yoga Flow">12:00 - Power Yoga Flow</button><button class="class" data-book-time="Tue 19:00" data-book-class="Zumba Ignite">19:00 - Zumba Ignite</button></div>
+      <div class="day reveal"><strong>Wed</strong><button class="class" data-book-time="Wed 6:30" data-book-class="HIIT Burner">6:30 - HIIT Burner</button><button class="class" data-book-time="Wed 11:30" data-book-class="Barre Sculpt">11:30 - Barre Sculpt</button><button class="class" data-book-time="Wed 18:00" data-book-class="Boxing Conditioning">18:00 - Boxing Conditioning</button></div>
+      <div class="day reveal"><strong>Thu</strong><button class="class" data-book-time="Thu 7:00" data-book-class="Athletic Core Lab">7:00 - Athletic Core Lab</button><button class="class" data-book-time="Thu 13:00" data-book-class="Yoga Recovery">13:00 - Yoga Recovery</button><button class="class" data-book-time="Thu 19:15" data-book-class="Strength Lab Advanced">19:15 - Strength Lab Advanced</button></div>
+      <div class="day reveal"><strong>Fri</strong><button class="class" data-book-time="Fri 6:00" data-book-class="Sprint & Sled">6:00 - Sprint & Sled</button><button class="class" data-book-time="Fri 12:30" data-book-class="Pilates Burn">12:30 - Pilates Burn</button><button class="class" data-book-time="Fri 18:00" data-book-class="CrossFit Engine Room">18:00 - CrossFit Engine Room</button></div>
+      <div class="day reveal"><strong>Sat</strong><button class="class" data-book-time="Sat 8:00" data-book-class="Endurance Ride (Spin)">8:00 - Endurance Ride (Spin)</button><button class="class" data-book-time="Sat 10:00" data-book-class="Functional Strength">10:00 - Functional Strength</button><button class="class" data-book-time="Sat 11:30" data-book-class="Stretch & Recover">11:30 - Stretch & Recover</button></div>
+      <div class="day reveal"><strong>Sun</strong><button class="class" data-book-time="Sun 9:00" data-book-class="Breathwork Yoga">9:00 - Breathwork Yoga</button><button class="class" data-book-time="Sun 10:30" data-book-class="Full Body Circuit">10:30 - Full Body Circuit</button><button class="class" data-book-time="Sun 12:00" data-book-class="Deep Mobility Reset">12:00 - Deep Mobility Reset</button></div>
     </div>
 
     <h2 class="section-title reveal">Explore More Class Options</h2>
     <section class="grid">
-      <article class="card reveal"><h3>Olympic Lifting</h3><p>Technique-intensive snatch and clean & jerk training.</p><button>Book</button></article>
-      <article class="card reveal"><h3>Glute & Legs Builder</h3><p>Lower body hypertrophy focused programming.</p><button>Book</button></article>
-      <article class="card reveal"><h3>Core + Stability</h3><p>Build anti-rotation and deep core control.</p><button>Book</button></article>
-      <article class="card reveal"><h3>TRX Suspension</h3><p>Joint-friendly bodyweight resistance class.</p><button>Book</button></article>
-      <article class="card reveal"><h3>Athletic Conditioning</h3><p>Agility ladders, med-ball power, and endurance sets.</p><button>Book</button></article>
-      <article class="card reveal"><h3>Bootcamp Outdoor</h3><p>High-energy team training in fresh air.</p><button>Book</button></article>
+      <article class="card reveal"><h3>Olympic Lifting</h3><p>Technique-intensive snatch and clean & jerk training.</p><button data-book-class="Olympic Lifting" data-book-time="Next Available Slot">Book</button></article>
+      <article class="card reveal"><h3>Glute & Legs Builder</h3><p>Lower body hypertrophy focused programming.</p><button data-book-class="Glute & Legs Builder" data-book-time="Next Available Slot">Book</button></article>
+      <article class="card reveal"><h3>Core + Stability</h3><p>Build anti-rotation and deep core control.</p><button data-book-class="Core + Stability" data-book-time="Next Available Slot">Book</button></article>
+      <article class="card reveal"><h3>TRX Suspension</h3><p>Joint-friendly bodyweight resistance class.</p><button data-book-class="TRX Suspension" data-book-time="Next Available Slot">Book</button></article>
+      <article class="card reveal"><h3>Athletic Conditioning</h3><p>Agility ladders, med-ball power, and endurance sets.</p><button data-book-class="Athletic Conditioning" data-book-time="Next Available Slot">Book</button></article>
+      <article class="card reveal"><h3>Bootcamp Outdoor</h3><p>High-energy team training in fresh air.</p><button data-book-class="Bootcamp Outdoor" data-book-time="Next Available Slot">Book</button></article>
     </section>
   </main>
+
+  <aside id="booking-toast" class="booking-toast" role="status" aria-live="assertive"></aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

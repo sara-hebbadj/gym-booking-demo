@@ -26,11 +26,15 @@
     </section>
 
     <section class="grid">
-      <article class="plan reveal"><h3>Core</h3><div class="price">$39</div><p>Gym floor + 4 classes / month</p><button>Join Core</button></article>
-      <article class="plan reveal"><h3>Pro</h3><div class="price">$79</div><p>Unlimited classes + sauna recovery</p><button>Join Pro</button></article>
-      <article class="plan reveal"><h3>Elite</h3><div class="price">$129</div><p>Priority booking + guest passes + PT assessment</p><button>Join Elite</button></article>
+      <article class="plan reveal"><h3>Core</h3><div class="price">AED 149</div><p>Gym floor + 4 classes / month</p><button data-plan="Core">Join Core</button></article>
+      <article class="plan reveal"><h3>Pro</h3><div class="price">AED 299</div><p>Unlimited classes + sauna recovery</p><button data-plan="Pro">Join Pro</button></article>
+      <article class="plan reveal"><h3>Elite</h3><div class="price">AED 489</div><p>Priority booking + guest passes + PT assessment</p><button data-plan="Elite">Join Elite</button></article>
     </section>
   </main>
+
+  <aside id="booking-toast" class="booking-toast" role="status" aria-live="assertive"></aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
